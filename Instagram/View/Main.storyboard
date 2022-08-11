@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTF-3A-hE7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GD7-3O-MF2">
+            <objects>
+                <viewController id="eTF-3A-hE7" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kjq-Kv-CMm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-Zc-BgP">
+                                <rect key="frame" x="0.0" y="120" width="414" height="640"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tyq-vl-KIE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Fq-BS-ze7">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nFH-WS-G4a">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="520"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tyq-vl-KIE" firstAttribute="height" secondItem="U7K-Zc-BgP" secondAttribute="height" multiplier="0.1875" id="FxY-sn-uWF"/>
+                                    <constraint firstItem="tyq-vl-KIE" firstAttribute="centerX" secondItem="U7K-Zc-BgP" secondAttribute="centerX" id="MtY-Il-78b"/>
+                                    <constraint firstItem="tyq-vl-KIE" firstAttribute="top" secondItem="U7K-Zc-BgP" secondAttribute="top" id="T7Q-xT-vJo"/>
+                                    <constraint firstItem="tyq-vl-KIE" firstAttribute="trailing" secondItem="nFH-WS-G4a" secondAttribute="trailing" id="bVu-Iq-O4S"/>
+                                    <constraint firstAttribute="bottom" secondItem="nFH-WS-G4a" secondAttribute="bottom" id="bfT-PI-wfC"/>
+                                    <constraint firstItem="tyq-vl-KIE" firstAttribute="leading" secondItem="U7K-Zc-BgP" secondAttribute="leading" id="n56-LV-IYg"/>
+                                    <constraint firstItem="tyq-vl-KIE" firstAttribute="leading" secondItem="nFH-WS-G4a" secondAttribute="leading" id="ws0-le-XkV"/>
+                                    <constraint firstItem="nFH-WS-G4a" firstAttribute="top" secondItem="tyq-vl-KIE" secondAttribute="bottom" id="wuY-TZ-SjM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5i-eu-zfB">
+                                <rect key="frame" x="0.0" y="760" width="414" height="136"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xsL-8H-yCf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X5i-eu-zfB" firstAttribute="height" secondItem="Kjq-Kv-CMm" secondAttribute="height" multiplier="0.151786" id="157-sW-Tky"/>
+                            <constraint firstItem="U7K-Zc-BgP" firstAttribute="trailing" secondItem="X5i-eu-zfB" secondAttribute="trailing" id="E6h-Sp-qHN"/>
+                            <constraint firstAttribute="bottom" secondItem="X5i-eu-zfB" secondAttribute="bottom" id="NiB-XD-e5u"/>
+                            <constraint firstItem="X5i-eu-zfB" firstAttribute="top" secondItem="U7K-Zc-BgP" secondAttribute="bottom" id="WsB-Yc-xKF"/>
+                            <constraint firstAttribute="bottom" secondItem="U7K-Zc-BgP" secondAttribute="bottom" constant="136" id="YsB-GH-guq"/>
+                            <constraint firstItem="U7K-Zc-BgP" firstAttribute="top" secondItem="xsL-8H-yCf" secondAttribute="top" constant="76" id="gBg-fp-CK8"/>
+                            <constraint firstItem="U7K-Zc-BgP" firstAttribute="leading" secondItem="xsL-8H-yCf" secondAttribute="leading" id="gnh-C0-evZ"/>
+                            <constraint firstItem="U7K-Zc-BgP" firstAttribute="centerX" secondItem="Kjq-Kv-CMm" secondAttribute="centerX" id="lov-R0-AGv"/>
+                            <constraint firstItem="U7K-Zc-BgP" firstAttribute="leading" secondItem="X5i-eu-zfB" secondAttribute="leading" id="nbY-JF-2kr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="tyq-vl-KIE" id="Paf-NM-X9n"/>
+                        <outlet property="table" destination="nFH-WS-G4a" id="Atg-sg-g1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAB-BQ-Bfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="-83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
